@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>nono curriculo</h1>
+    <form method="get"name="formCurriculo">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label >Nome:</label>
+            <input type="text"name=nome required/><br><br>
+            <label >Endereço</label>
+            <input type="text"name="Endereço" required size="50"/> <br><br>
+            <label >Cidade:</label>
+            <input type="text" name="Cidade"><br><br>
+            <label >Estado</label><br><br>
+            <select name="Estado" required>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <br>
+            <label>RG</label>
+            <INput type="text" name="rg" size="15" required>RG</INput>
+            <label>CPF:</label>
+            <INput type="text" name="CPF" size="14" maxlength="14" title="Informe o CPF no formulario 999.999.999-99" pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}" placeholder="Ex: 123.456.789-01">
+            <label>sexo: </label>
+            <input type="radio" name="sexo" value="M">Masculino
+            <input type="radio" name="sexo" value="F">Feminino
+            <label >nascimento:</label>
+            <input type="date" nome="nascimento" required max="2022-03-22">
+            <fieldset>
+                <legend>Experiencia profissional</legend>
+                <input type="checkbox" name="salario" min="0" required step="0.01"/> <br>
+                <label >Curriculo(anexe DOC ou PDF)</label>
+            <input type="file" name="Curriculo" accept=".pdf; .doc, .docx"> <br>
+                <label >Correio eletronico</label>
+<input type="email" nome="correio" required>
+            </fieldset>
+        <input type="submit" value="Enviar"/>
+        </form>
+</body>
+</html>
